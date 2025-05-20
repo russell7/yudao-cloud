@@ -47,6 +47,7 @@ public class GrayReactiveLoadBalancerClientFilter implements GlobalFilter, Order
 
     @Override
     public int getOrder() {
+        // https://github.com/YunaiV/yudao-cloud/pull/213
         return ReactiveLoadBalancerClientFilter.LOAD_BALANCER_CLIENT_FILTER_ORDER - 50;
     }
 
